@@ -21,3 +21,24 @@ src/main.tsx:8:6 - error TS2786: 'SnackbarProvider' cannot be used as a JSX comp
        ~~~~~~~~~~~~~~~~
 
 ```
+
+## NPM
+The issues doesn't seem to be happening when using `npm`
+1. Head to the `npm` branch
+
+2. Remove old `node_modules`
+```bash
+rm -rf node_modules
+```
+
+3. Install dependencies
+```bash
+npm install
+```
+
+4. Run type checking
+```bash
+npm run type-check
+```
+
+5. It should go through successfully, without any errors
